@@ -2,18 +2,16 @@
 <html>
   <head>
     <title>Splurty</title>
-    <%= csrf_meta_tags %>
+    
     <%= csp_meta_tag %>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
+</head>
+<body>
 
     <header class="row">
        <div class="col-3">
-    
     <%= link_to root_path, class: 'logo' do %>
 
 <div class="circle">
@@ -25,9 +23,13 @@
         to code
       </div>
 <% end -%>
+
+
   <div class="col col-sm-4 hidden-xs-down slogan">
         Splurting out unsolicited advice about entrepreneurship since 2016
       </div>
+
+      
   <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
 
 <!-- Button trigger modal -->
